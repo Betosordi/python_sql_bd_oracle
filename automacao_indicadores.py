@@ -5,17 +5,17 @@ import pywhatkit as kit
 
 
 # Conectar ao banco de dados Oracle
-dsn = cx_Oracle.makedsn("192.168.10.252", 1521, service_name="AWORKSDB")
-connection = cx_Oracle.connect(user="REBOUCAS", password="REBOUCASBD2024", dsn=dsn)
+dsn = cx_Oracle.makedsn("IP onde esta o banco de dados", 1521, service_name="Seu serviço")
+connection = cx_Oracle.connect(user="Usuario de leitura", password="Sua senha", dsn=dsn)
 #********************************************************************************************8
 # Conectar ao banco de dados PostgreSQL
 
 # Configurações do banco de dados
 DB_PARAMS = {
-    'dbname': 'Monitoramento_Producao',
+    'dbname': 'Tabela do banco de dados Postgree',
     'user': 'postgres',
-    'password': 'Analista#2024',
-    'host': '192.168.10.253',
+    'password': 'Sua senha',
+    'host': 'O IP onde esta instalado o Postgree',
     'port': '5432'
 }
 # Estabelecendo a conexão
